@@ -1,0 +1,41 @@
+//
+//  ContentView.swift
+//  HolocronSPMTester
+//
+//  Created by Chris Spradling on 8/12/19.
+//  Copyright © 2019 Chris Spradling. All rights reserved.
+//
+
+import SwiftUI
+import Combine
+
+struct ContentView: View {
+    
+    @ObjectBinding var people = PeopleViewModel()
+    
+    private var navTitle = Text("The People of Star Wars")
+    
+    var body: some View {
+        NavigationView {
+            if people.loaded {
+                PersonListView(people.people, title: navTitle)
+
+            } else {
+                LoadingScreen(navTitle)
+                
+            }
+
+        }
+        
+    }
+    
+}
+
+
+#if DEBUG
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
+}
+#endif

@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Holocron",
+        "repositoryURL": "https://github.com/Renaissance8905/Holocron.git",
+        "state": {
+          "branch": null,
+          "revision": "2a4a786e9029e88c37914f60b0df4d8b414f3915",
+          "version": "0.4.1"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
