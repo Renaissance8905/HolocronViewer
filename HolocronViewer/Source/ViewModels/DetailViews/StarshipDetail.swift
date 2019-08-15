@@ -45,7 +45,7 @@ struct StarshipDetail: DetailView {
             detailStack
             links
             
-        }.navigationBarTitle(data.name)
+        }.navigationBarTitle(Text(data.name))
         
     }
     

@@ -31,7 +31,8 @@ struct SpeciesDetail: DetailView {
         List {
             detailStack
             links
-        }.navigationBarTitle(data.name)
+            
+        }.navigationBarTitle(Text(data.name))
         
     }
     

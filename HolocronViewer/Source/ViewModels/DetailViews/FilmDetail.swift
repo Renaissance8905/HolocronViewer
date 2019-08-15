@@ -30,7 +30,7 @@ struct FilmDetail: DetailView {
             
             links
             
-        }.navigationBarTitle(data.name)
+        }.navigationBarTitle(Text(data.name))
                 
     }
     
@@ -49,8 +49,8 @@ struct FilmDetail: DetailView {
         VStack(alignment: .leading, spacing: 12) {
             
             DetailLabel("Episode",      String(data.episodeId))
-            DetailLabel("Director",     data.director)
-            DetailLabel("Producer",     data.producer)
+            DetailLabel("Director",     data.director.linePer)
+            DetailLabel("Producer",     data.producer.linePer)
             DetailLabel("Release Date", data.releaseDateString)
             
         }

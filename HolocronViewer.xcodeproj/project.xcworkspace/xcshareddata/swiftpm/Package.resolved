@@ -5,9 +5,9 @@
         "package": "Holocron",
         "repositoryURL": "https://github.com/Renaissance8905/Holocron.git",
         "state": {
-          "branch": null,
-          "revision": "2a4a786e9029e88c37914f60b0df4d8b414f3915",
-          "version": "0.4.1"
+          "branch": "caching",
+          "revision": "0b864a3bef095776c185975f6e0ceea8256e92cb",
+          "version": null
         }
       }
     ]

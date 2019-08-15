@@ -480,8 +480,8 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/Renaissance8905/Holocron.git";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.1.0;
+				branch = caching;
+				kind = branch;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
