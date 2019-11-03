@@ -10,17 +10,14 @@ import Holocron
 import Combine
 import SwiftUI
 
-class SWDataViewModel<T: Codable>: BindableObject {
-    
-    var willChange = PassthroughSubject<Void, Never>()
-    
+class SWDataViewModel<T: Codable>: ObservableObject {
+        
     private var fetchBlock: FetchBlock<T>
     
-    private(set) var object: T?
+    @Published private(set) var object: T?
     
     private func setData(_ data: T?) {
         DispatchQueue.main.async { [weak self] in
-            self?.willChange.send(())
             self?.object = data
             
         }

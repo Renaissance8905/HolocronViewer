@@ -14,11 +14,11 @@ struct FilmDetail: DetailView {
     
     private(set) var data: Film
     
-    @ObjectBinding var species:     SWDataViewModel<[Species]>
-    @ObjectBinding var vehicles:    SWDataViewModel<[Vehicle]>
-    @ObjectBinding var characters:  SWDataViewModel<[Person]>
-    @ObjectBinding var planets:     SWDataViewModel<[Planet]>
-    @ObjectBinding var starships:   SWDataViewModel<[Starship]>
+    @ObservedObject var species:     SWDataViewModel<[Species]>
+    @ObservedObject var vehicles:    SWDataViewModel<[Vehicle]>
+    @ObservedObject var characters:  SWDataViewModel<[Person]>
+    @ObservedObject var planets:     SWDataViewModel<[Planet]>
+    @ObservedObject var starships:   SWDataViewModel<[Starship]>
 
     var body: some View {
         List {

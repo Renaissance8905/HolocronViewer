@@ -14,11 +14,11 @@ struct PersonDetail: DetailView {
     
     private(set) var data: Person
     
-    @ObjectBinding var homeworld:   SWDataViewModel<Planet>
-    @ObjectBinding var films:       SWDataViewModel<[Film]>
-    @ObjectBinding var species:     SWDataViewModel<[Species]>
-    @ObjectBinding var vehicles:    SWDataViewModel<[Vehicle]>
-    @ObjectBinding var starships:   SWDataViewModel<[Starship]>
+    @ObservedObject var homeworld:   SWDataViewModel<Planet>
+    @ObservedObject var films:       SWDataViewModel<[Film]>
+    @ObservedObject var species:     SWDataViewModel<[Species]>
+    @ObservedObject var vehicles:    SWDataViewModel<[Vehicle]>
+    @ObservedObject var starships:   SWDataViewModel<[Starship]>
     
     init?(_ person: Person?) {
         guard let person = person else { return nil }

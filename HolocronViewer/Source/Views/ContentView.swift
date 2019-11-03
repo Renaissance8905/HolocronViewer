@@ -11,7 +11,7 @@ import Combine
 
 struct ContentView: View {
     
-    @ObjectBinding var people = PeopleViewModel()
+    @ObservedObject var people = PeopleViewModel()
     
     private var navTitle = Text("The People of Star Wars")
     

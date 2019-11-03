@@ -14,8 +14,8 @@ struct PlanetDetail: DetailView {
     
     private(set) var data: Planet
     
-    @ObjectBinding var residents:   SWDataViewModel<[Person]>
-    @ObjectBinding var films:       SWDataViewModel<[Film]>
+    @ObservedObject var residents:   SWDataViewModel<[Person]>
+    @ObservedObject var films:       SWDataViewModel<[Film]>
 
     init?(_ planet: Planet?) {
         guard let planet = planet else { return nil }

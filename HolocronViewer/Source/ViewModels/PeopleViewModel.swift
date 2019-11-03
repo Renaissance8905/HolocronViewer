@@ -10,23 +10,10 @@ import SwiftUI
 import Combine
 import Holocron
 
-class PeopleViewModel: BindableObject {
+class PeopleViewModel: ObservableObject {
     
     private(set) var loaded = false
-    
-    var willChange = PassthroughSubject<Void, Never>()
-    
-    var people: [Person] = [] {
-        willSet {
-            willChange.send(())
-            
-        }
-        didSet {
-            people = people.sorted(by: { $0.name < $1.name })
-            
-        }
-        
-    }
+    @Published var people: [Person] = []
     
     init() {
         SWAPI.shared.getPeople(limit: 100) { [weak self] (result) in
@@ -36,7 +23,7 @@ class PeopleViewModel: BindableObject {
                 DispatchQueue.main.async {
                     
                     self?.loaded = true
-                    self?.people = people
+                    self?.people = people.sorted(by: { $0.name < $1.name })
                     
                 }
                 

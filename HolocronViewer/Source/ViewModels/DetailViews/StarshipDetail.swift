@@ -14,8 +14,8 @@ struct StarshipDetail: DetailView {
     
     private(set) var data: Starship
     
-    @ObjectBinding var films:   SWDataViewModel<[Film]>
-    @ObjectBinding var pilots:  SWDataViewModel<[Person]>
+    @ObservedObject var films:   SWDataViewModel<[Film]>
+    @ObservedObject var pilots:  SWDataViewModel<[Person]>
     
     init?(_ starship: Starship?) {
         guard let ship = starship else { return nil }

@@ -14,9 +14,9 @@ struct SpeciesDetail: DetailView {
     
     private(set) var data: Species
     
-    @ObjectBinding var people:      SWDataViewModel<[Person]>
-    @ObjectBinding var films:       SWDataViewModel<[Film]>
-    @ObjectBinding var homeworld:   SWDataViewModel<Planet>
+    @ObservedObject var people:      SWDataViewModel<[Person]>
+    @ObservedObject var films:       SWDataViewModel<[Film]>
+    @ObservedObject var homeworld:   SWDataViewModel<Planet>
     
     init?(_ species: Species?) {
         guard let species = species else { return nil }
