@@ -13,7 +13,7 @@ struct ContentView: View {
     
     @ObservedObject var people = PeopleViewModel()
     
-    private var navTitle = Text("The People of Star Wars")
+    private var navTitle = Text("The Holocron")
     
     var body: some View {
         NavigationView {
