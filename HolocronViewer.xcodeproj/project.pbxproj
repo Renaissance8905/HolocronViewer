@@ -22,6 +22,7 @@
 		D48B4EF62304B3F5004D03B3 /* PeopleViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48B4EF52304B3F5004D03B3 /* PeopleViewModel.swift */; };
 		D48B4EF82304B414004D03B3 /* PlanetDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48B4EF72304B414004D03B3 /* PlanetDetail.swift */; };
 		D48B4EFA2304B771004D03B3 /* SWAPI+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D48B4EF92304B771004D03B3 /* SWAPI+Helpers.swift */; };
+		D4AD8A232325F49B00CB399E /* UIImageColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4AD8A222325F49B00CB399E /* UIImageColors.swift */; };
 		D4BBA246230207EE00E86911 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BBA245230207EE00E86911 /* AppDelegate.swift */; };
 		D4BBA248230207EE00E86911 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BBA247230207EE00E86911 /* SceneDelegate.swift */; };
 		D4BBA24A230207EE00E86911 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4BBA249230207EE00E86911 /* ContentView.swift */; };
@@ -47,6 +48,7 @@
 		D48B4EF52304B3F5004D03B3 /* PeopleViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleViewModel.swift; sourceTree = "<group>"; };
 		D48B4EF72304B414004D03B3 /* PlanetDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlanetDetail.swift; sourceTree = "<group>"; };
 		D48B4EF92304B771004D03B3 /* SWAPI+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SWAPI+Helpers.swift"; sourceTree = "<group>"; };
+		D4AD8A222325F49B00CB399E /* UIImageColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageColors.swift; sourceTree = "<group>"; };
 		D4BBA242230207EE00E86911 /* HolocronViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HolocronViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4BBA245230207EE00E86911 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D4BBA247230207EE00E86911 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 			isa = PBXGroup;
 			children = (
 				D4BBA249230207EE00E86911 /* ContentView.swift */,
+				D4AD8A222325F49B00CB399E /* UIImageColors.swift */,
 				D48B4EF12304B38B004D03B3 /* LoadingScreen.swift */,
 				D48B4EF32304B3BF004D03B3 /* PersonListView.swift */,
 			);
@@ -269,6 +272,7 @@
 				D48B4EFA2304B771004D03B3 /* SWAPI+Helpers.swift in Sources */,
 				D48B4EEE2304B327004D03B3 /* DetailLabel.swift in Sources */,
 				D48B4EF62304B3F5004D03B3 /* PeopleViewModel.swift in Sources */,
+				D4AD8A232325F49B00CB399E /* UIImageColors.swift in Sources */,
 				D48B4EF22304B38B004D03B3 /* LoadingScreen.swift in Sources */,
 				D48B4EF82304B414004D03B3 /* PlanetDetail.swift in Sources */,
 				D416AD792305096E0027B806 /* SpeciesDetail.swift in Sources */,
